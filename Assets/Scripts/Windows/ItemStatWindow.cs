@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemStatWindow : MonoBehaviour
+public class ItemStatWindow : AbstractWindow
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public override EWindowType WindowType => EWindowType.ItemStat;
 
-    // Update is called once per frame
-    void Update()
+    private readonly ItemStatWindowView _view;
+
+    // TODO Check 
+    public ItemStatWindow(ItemStatWindowView view) : base(view)
     {
-        
+        _view = view;
     }
 }

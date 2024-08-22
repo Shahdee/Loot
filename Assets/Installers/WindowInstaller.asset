@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b65e43e558dc4d5db9f6e3f7c471e48, type: 3}
+  m_Name: WindowInstaller
+  m_EditorClassIdentifier: 
+  _mainWindowView: {fileID: 6347427070792673043, guid: 18465261a43e2440f8e9b3db2c2db33f, type: 3}
+  _dropWindowView: {fileID: 6548892386516438332, guid: eb3c9c49ce86742b7866e60d3dc7e427, type: 3}
+  _itemStatWindowView: {fileID: 720290892782557809, guid: a1b74a9b79490485cb83f0dab01b38ed, type: 3}

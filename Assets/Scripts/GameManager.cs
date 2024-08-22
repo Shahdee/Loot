@@ -1,8 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+    // TODO rename 
+public class GameManager 
 {
-    // window controller
+    // start game 
+    
+    // show window 
+
+
+    public GameManager()
+    {
+        
+    }
+
 }

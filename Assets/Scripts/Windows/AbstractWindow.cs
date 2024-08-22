@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbstractWindow : MonoBehaviour
+public abstract class AbstractWindow : IWindow
 {
-    // Start is called before the first frame update
-    void Start()
+    public abstract EWindowType WindowType {get;}
+    
+    private readonly IWindowView _view;
+    
+    protected AbstractWindow(IWindowView view)
     {
-        
+        _view = view;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetParent(Transform parent)
     {
-        
+        _view.SetParent(parent);
     }
+
+    public void Open()
+    {
+        _view.Open();
+    }
+
+    public void Close()
+    {
+        _view.Close();
+    }
+    
 }

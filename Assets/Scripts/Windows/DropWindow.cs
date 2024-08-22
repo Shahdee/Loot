@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DropWindow : MonoBehaviour
+public class DropWindow : AbstractWindow
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public override EWindowType WindowType => EWindowType.Drop;
 
-    // Update is called once per frame
-    void Update()
+    private readonly DropWindowView _view;
+
+    // TODO Check 
+    public DropWindow(DropWindowView view) : base(view)
     {
-        
+        _view = view;
     }
 }
