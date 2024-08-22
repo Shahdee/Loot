@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ResourceCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Text _amount;
 
-    // Update is called once per frame
-    void Update()
+    public void SetAmount(int amount)
     {
-        
+        _amount.text = amount.ToString();
     }
 }

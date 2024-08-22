@@ -1,7 +1,5 @@
-namespace DefaultNamespace
+
+public interface IPlayerDataProvider
 {
-    public interface IPlayerDataProvider
-    {
-        
-    }
+    
 }

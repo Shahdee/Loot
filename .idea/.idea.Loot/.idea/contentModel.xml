@@ -577,6 +577,7 @@
           <e p="CharacterView.cs" t="Include" />
           <e p="EItemStat.cs" t="Include" />
           <e p="EItemType.cs" t="Include" />
+          <e p="GameInstaller.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="ICharacterModel.cs" t="Include" />
           <e p="Items" t="Include">
@@ -602,6 +603,8 @@
             <e p="DropWindow.cs" t="Include" />
             <e p="DropWindowView.cs" t="Include" />
             <e p="EWindowType.cs" t="Include" />
+            <e p="InventoryView.cs" t="Include" />
+            <e p="ItemButton.cs" t="Include" />
             <e p="ItemStatWindow.cs" t="Include" />
             <e p="ItemStatWindowView.cs" t="Include" />
             <e p="IWindow.cs" t="Include" />

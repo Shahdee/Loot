@@ -10,5 +10,21 @@ public class MainWindow : AbstractWindow
    public MainWindow(MainWindowView view) : base(view)
    {
       _view = view;
+      _view.OnLootClick += LootClick;
+      _view.OnInventoryItemClick += InventoryItemClick;
+
+   }
+
+   private void LootClick()
+   {
+      
+   }
+   
+   private void InventoryItemClick(int index)
+   {
+      var itemType = (EItemType) index;
+      Debug.Log("item " + itemType);
+      
+      
    }
 }
