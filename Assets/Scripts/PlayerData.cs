@@ -11,5 +11,5 @@ public class PlayerData
    public int DefaultGold;
 
    [Tooltip(" 1 mana in X seconds")]
-   public int ManaReplenishSpeed; // [sec] 
+   public int ManaReplenishSpeed;  
 }
