@@ -7,4 +7,6 @@ public interface IPlayerDataProvider
     int GetManaReplenishValue();
 
     int GetDefaultGold();
+
+    int GetLootPrice();
 }

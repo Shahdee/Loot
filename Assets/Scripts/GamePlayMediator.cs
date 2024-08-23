@@ -41,7 +41,11 @@ public class GamePlayMediator : IGamePlayMediator
 
     private void LootClick()
     {
-        Debug.Log("LootClick ");
+        if (_playerModel.isEnoughMana(_playerModel.LootPrice))
+        {
+            // if no new item pending   
+                // Loot 
+        }
     }
     
     private void InventoryClick(int index)

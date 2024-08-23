@@ -9,6 +9,7 @@
 
         public int Mana => _currentMana;
         public int Gold => _currentGold;
+        public int LootPrice => _lootPrice;
 
         private int _currentMana;
         
@@ -17,6 +18,9 @@
         private float _manaReplenishSpeed;
         
         private int _manaReplenishValue;
+        
+        private int _lootPrice;
+        
         
         private readonly IPlayerDataProvider _playerDataProvider;
         
@@ -29,9 +33,10 @@
             
             _manaReplenishSpeed = _playerDataProvider.GetManaReplenishSpeed();
             _manaReplenishValue = _playerDataProvider.GetManaReplenishValue();
+            _lootPrice = _playerDataProvider.GetLootPrice();
         }
 
-        public bool isEnoughMana(int mana) => (mana >= _currentMana);
+        public bool isEnoughMana(int mana) => (mana < _currentMana);
         
         public bool SpendMana(int mana)
         {

@@ -7,6 +7,7 @@ using System;
         
         int Mana { get; }
         int Gold { get; }
+        int LootPrice { get; }
 
         bool isEnoughMana(int value);
         bool SpendMana(int value);

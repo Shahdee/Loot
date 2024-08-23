@@ -16,5 +16,5 @@ public class PlayerDataProvider : IPlayerDataProvider
     public int GetManaReplenishValue() => _playerAsset.PlayerData.ManaReplenishValue;
 
     public int GetDefaultGold() => _playerAsset.PlayerData.DefaultGold;
-
+    public int GetLootPrice() => _playerAsset.PlayerData.LootPrice;
 }
