@@ -10,6 +10,6 @@ public class PlayerInstaller : ScriptableObjectInstaller
     public override void InstallBindings()
     {
         Container.BindInstance(_playerAsset).AsSingle();
-        // Container.BindInterfacesTo<PlayerDataProvider>().AsSingle();
+        Container.BindInterfacesTo<PlayerDataProvider>().AsSingle();
     }
 }

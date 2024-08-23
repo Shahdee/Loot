@@ -13,6 +13,7 @@ namespace Character
             BindAsset(_characterView); 
             
             Container.BindInterfacesTo<CharacterController>().AsSingle();
+            Container.BindInterfacesTo<CharacterModel>().AsSingle();
         }
         
         

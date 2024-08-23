@@ -5,23 +5,19 @@ using Zenject;
 // TODO rename 
 public class GameManager : IInitializable
 {
-    // start game 
-    
-    // show window 
+
 
     private readonly IWindowController _windowController;
+    private readonly ICharacterController _characterController;
 
-    public GameManager(IWindowController windowController)
+    public GameManager(IWindowController windowController, ICharacterController characterController)
     {
         _windowController = windowController;
-        
-        
+        _characterController = characterController;
     }
 
     public void Initialize()
     {
-        // TODO subscribe if needed
-        
         StartGame();
     }
 
