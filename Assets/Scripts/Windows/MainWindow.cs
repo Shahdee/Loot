@@ -1,7 +1,11 @@
 using UnityEngine;
+using System;
 
-public class MainWindow : AbstractWindow
+public class MainWindow : AbstractWindow, IMainWindow
 {
+   public event Action OnLootClick;
+   public event Action<int> OnInventoryItemClick;
+   
    public override EWindowType WindowType => EWindowType.Main;
 
    private readonly MainWindowView _view;
@@ -14,17 +18,21 @@ public class MainWindow : AbstractWindow
       _view.OnInventoryItemClick += InventoryItemClick;
 
    }
-
-   private void LootClick()
-   {
-      
-   }
    
+   public void SetMana(int mana) => _view.SetMana(mana);
+   public void SetGold(int gold) => _view.SetGold(gold);
+
+   private void LootClick() => OnLootClick?.Invoke();
+
    private void InventoryItemClick(int index)
    {
       var itemType = (EItemType) index;
       Debug.Log("item " + itemType);
       
+      OnInventoryItemClick?.Invoke(index);
       
    }
+   
+   
+   
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemStatWindow : AbstractWindow
+public class ItemStatWindow : AbstractWindow, IItemStatWindow
 {
     public override EWindowType WindowType => EWindowType.ItemStat;
 

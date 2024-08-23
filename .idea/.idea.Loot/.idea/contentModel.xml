@@ -829,7 +829,15 @@
           <e p="EItemType.cs" t="Include" />
           <e p="GameInstaller.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GamePlayMediator.cs" t="Include" />
+          <e p="Helper" t="Include">
+            <e p="HelperInstaller.cs" t="Include" />
+            <e p="IUpdatable.cs" t="Include" />
+            <e p="UnityEventController.cs" t="Include" />
+            <e p="UnityEventView.cs" t="Include" />
+          </e>
           <e p="ICharacterModel.cs" t="Include" />
+          <e p="IGamePlayMediator.cs" t="Include" />
           <e p="Items" t="Include">
             <e p="IItemFactory.cs" t="Include" />
             <e p="IItemIconProvider.cs" t="Include" />
@@ -842,6 +850,7 @@
           </e>
           <e p="Player" t="Include">
             <e p="IPlayerDataProvider.cs" t="Include" />
+            <e p="IPlayerModel.cs" t="Include" />
             <e p="PlayerAsset.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
             <e p="PlayerDataProvider.cs" t="Include" />
@@ -854,7 +863,11 @@
             <e p="DropWindow.cs" t="Include" />
             <e p="DropWindowView.cs" t="Include" />
             <e p="EWindowType.cs" t="Include" />
+            <e p="IDropWindow.cs" t="Include" />
+            <e p="IItemStatWindow.cs" t="Include" />
+            <e p="IMainWindow.cs" t="Include" />
             <e p="InventoryView.cs" t="Include" />
+            <e p="IResourceController.cs" t="Include" />
             <e p="ItemButton.cs" t="Include" />
             <e p="ItemStatWindow.cs" t="Include" />
             <e p="ItemStatWindowView.cs" t="Include" />
@@ -865,6 +878,7 @@
             <e p="IWindowVIew.cs" t="Include" />
             <e p="MainWindow.cs" t="Include" />
             <e p="MainWindowView.cs" t="Include" />
+            <e p="ResourceController.cs" t="Include" />
             <e p="ResourceCounter.cs" t="Include" />
             <e p="WindowController.cs" t="Include" />
             <e p="WindowInstaller.cs" t="Include" />

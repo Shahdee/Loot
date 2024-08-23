@@ -9,10 +9,9 @@ public class InventoryView : MonoBehaviour
 
     public void Awake()
     {
-        var index = 0;
         for (int i = 0; i < _items.Length; i++)
         {
-            index = i;
+            var index = i;
             
             // TODO check 
             _items[i].OnClick += () =>

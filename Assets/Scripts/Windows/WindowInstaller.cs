@@ -1,3 +1,4 @@
+using Windows;
 using UnityEngine;
 using Zenject;
 
@@ -26,7 +27,8 @@ public class WindowInstaller : ScriptableObjectInstaller<WindowInstaller>
         Container.BindInterfacesTo<DropWindow>().AsSingle();
         Container.BindInterfacesTo<ItemStatWindow>().AsSingle();
         
-        
+        Container.BindInterfacesTo<ResourceController>().AsSingle().NonLazy();
+
         Container.BindInterfacesTo<WindowStorage>().AsSingle();
         Container.BindInterfacesTo<WindowController>().AsSingle();
         Container.BindInterfacesTo<WindowParent>().AsSingle().NonLazy();

@@ -6,7 +6,6 @@ using Zenject;
 public class GameManager : IInitializable
 {
 
-
     private readonly IWindowController _windowController;
     private readonly ICharacterController _characterController;
 
@@ -25,6 +24,7 @@ public class GameManager : IInitializable
     {
         _windowController.OpenWindow(EWindowType.Main);
         
+        // set up player 
         // set up character 
     }
 }

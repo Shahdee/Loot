@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DropWindow : AbstractWindow
+public class DropWindow : AbstractWindow, IDropWindow
 {
     public override EWindowType WindowType => EWindowType.Drop;
 
