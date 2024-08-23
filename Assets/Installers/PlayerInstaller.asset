@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d68be112854e5cad473850d957eec4, type: 3}
   m_Name: PlayerInstaller
   m_EditorClassIdentifier: 
-  _playerAsset: {fileID: 0}
+  _plAsset: {fileID: 11400000, guid: e7cd528ecea61fd4e92a3009d47040b0, type: 2}

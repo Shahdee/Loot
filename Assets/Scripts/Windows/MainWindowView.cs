@@ -29,7 +29,13 @@ public class MainWindowView : AbstractWindowView
         _lootBtn.enabled = block; // TODO check
     }
 
-    private void LootClick() => OnLootClick?.Invoke();
+    private void LootClick()
+    {
+        Debug.Log("click ");
+        OnLootClick?.Invoke();
+    }
+
+    
 
     private void InventoryItemClick(int index) => OnInventoryItemClick?.Invoke(index);
 

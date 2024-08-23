@@ -17,3 +17,4 @@ MonoBehaviour:
     DefaultGold: 0
     ManaReplenishSpeed: 5
     ManaReplenishValue: 1
+    LootPrice: 2

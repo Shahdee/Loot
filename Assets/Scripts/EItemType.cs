@@ -4,10 +4,10 @@ using UnityEngine;
 
 public enum EItemType 
 {
-    Helmet,
-    Necklace,
+    Armor,
+    Gem,
     Shield,
     Sword,
-    Belt,
-    Boots
+    Book,
+    Dagger
 }

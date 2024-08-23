@@ -22,8 +22,12 @@ public class MainWindow : AbstractWindow, IMainWindow
    public void SetMana(int mana) => _view.SetMana(mana);
    public void SetGold(int gold) => _view.SetGold(gold);
 
-   private void LootClick() => OnLootClick?.Invoke();
-
+   private void LootClick()
+   {
+      Debug.Log("click 2");
+      OnLootClick?.Invoke();
+   }
+   
    private void InventoryItemClick(int index)
    {
       var itemType = (EItemType) index;

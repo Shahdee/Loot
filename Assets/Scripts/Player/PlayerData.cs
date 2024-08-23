@@ -11,5 +11,7 @@ public class PlayerData
    [Tooltip(" seconds")]
    public int ManaReplenishSpeed;  
    
-   public int ManaReplenishValue;  
+   public int ManaReplenishValue; 
+   
+   public int LootPrice;  
 }

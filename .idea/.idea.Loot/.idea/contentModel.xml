@@ -6,6 +6,13 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Data" t="Include" />
+        <e p="FantasyIconPack" t="Include">
+          <e p="128" t="Include" />
+          <e p="256" t="Include" />
+          <e p="512" t="Include" />
+          <e p="64" t="Include" />
+          <e p="Scenes" t="Include" />
+        </e>
         <e p="Free Platform Game Assets" t="Include">
           <e p="Backgrounds" t="Include">
             <e p="Background" t="Include">
@@ -68,9 +75,6 @@
               <e p="png" t="Include">
                 <e p="1x" t="Include" />
                 <e p="2x" t="Include" />
-                <e p="4x" t="Include">
-                  <e p="Sprite Mesh" t="Include" />
-                </e>
               </e>
             </e>
           </e>
@@ -846,6 +850,7 @@
             <e p="ItemIconAsset.cs" t="Include" />
             <e p="ItemIconData.cs" t="Include" />
             <e p="ItemIconProvider.cs" t="Include" />
+            <e p="ItemInstaller.cs" t="Include" />
             <e p="ItemModel.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -886,6 +891,11 @@
             <e p="WindowParentView.cs" t="Include" />
             <e p="WindowStorage.cs" t="Include" />
           </e>
+        </e>
+        <e p="Textures" t="Include">
+          <e p="Character" t="Include" />
+          <e p="Items" t="Include" />
+          <e p="Resources" t="Include" />
         </e>
       </e>
       <e p="Loot.sln" t="IncludeFlat" />

@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemIconData:
   - ItemType: 0
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: 30fdde2b1730f4d9cb12b0110fb21370, type: 3}
   - ItemType: 1
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: b7bfd6ad5e0a34703aa1bbe6814dd474, type: 3}
   - ItemType: 2
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: 47eca6f30b57b42cb98288a5c66eb7e9, type: 3}
   - ItemType: 3
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: b63a1c33e47184781b1592fca1414e45, type: 3}
   - ItemType: 4
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: d9848a665793744228577afeae428eaa, type: 3}
   - ItemType: 5
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: 95dbc42371e67421ba59bba3044c9ce2, type: 3}
