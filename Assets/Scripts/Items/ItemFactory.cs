@@ -1,16 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ItemFactory : IItemFactory
 {
-    public ItemFactory()
+
+    private readonly int _itemCount;
+    private readonly ICharacterModel _characterModel;
+    
+    
+    public ItemFactory(ICharacterModel characterModel)
     {
+        _itemCount = Enum.GetValues( typeof( EItemType ) ).Length;
+        _characterModel = characterModel;
+    }
+
+    public ItemModel Create()
+    {
+        var randomItemType = GetRandomItemType();
+
+        return Create(randomItemType);
+    }
+
+    public ItemModel Create(EItemType itemType)
+    {
+        var level = _characterModel.GetCurrentLevelForItem(itemType);
+        Debug.Log("Create " + itemType + " of level " + level);
+        
+        // randomize level 
+        // randomize stats
+        
+        return new ItemModel(itemType, level);
 
     }
 
-    public ItemData Create(EItemType itemType)
+
+    private EItemType GetRandomItemType()
     {
-        return null;
+        return (EItemType)Random.Range(0, _itemCount + 1);
     }
 }

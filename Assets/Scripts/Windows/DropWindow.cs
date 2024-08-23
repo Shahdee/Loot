@@ -13,4 +13,9 @@ public class DropWindow : AbstractWindow, IDropWindow
     {
         _view = view;
     }
+
+    public void SetItems(ItemModel currentItem, ItemModel dropItem)
+    {
+        
+    }
 }

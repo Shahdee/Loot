@@ -1,8 +1,8 @@
-using System.Transactions;
-using UnityEngine;
 using Zenject;
 
 // TODO rename 
+// TODO - redundant ? 
+
 public class GameManager : IInitializable
 {
 
@@ -24,7 +24,6 @@ public class GameManager : IInitializable
     {
         _windowController.OpenWindow(EWindowType.Main);
         
-        // set up player 
-        // set up character 
+        // set up character - by giving him items, maybe later 
     }
 }

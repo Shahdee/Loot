@@ -845,6 +845,7 @@
           <e p="Items" t="Include">
             <e p="IItemFactory.cs" t="Include" />
             <e p="IItemIconProvider.cs" t="Include" />
+            <e p="IItemModel.cs" t="Include" />
             <e p="ItemData.cs" t="Include" />
             <e p="ItemFactory.cs" t="Include" />
             <e p="ItemIconAsset.cs" t="Include" />
@@ -874,6 +875,7 @@
             <e p="InventoryView.cs" t="Include" />
             <e p="IResourceController.cs" t="Include" />
             <e p="ItemButton.cs" t="Include" />
+            <e p="ItemParamsView.cs" t="Include" />
             <e p="ItemStatWindow.cs" t="Include" />
             <e p="ItemStatWindowView.cs" t="Include" />
             <e p="IWindow.cs" t="Include" />

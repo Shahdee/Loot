@@ -11,5 +11,6 @@ public class ItemInstaller : ScriptableObjectInstaller
     {
         Container.BindInstance(_itemIconAsset).AsSingle();
         Container.BindInterfacesTo<ItemIconProvider>().AsSingle();
+        Container.BindInterfacesTo<ItemFactory>().AsSingle();
     }
 }

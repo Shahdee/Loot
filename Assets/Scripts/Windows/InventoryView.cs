@@ -16,10 +16,15 @@ public class InventoryView : MonoBehaviour
             // TODO check 
             _items[i].OnClick += () =>
             {
-                Debug.Log("btn click " + index);
                 OnItemClick?.Invoke(index);
             };
         }
+    }
+
+    public void SetItem(int index, Sprite icon, int level)
+    {
+        _items[index].SetIcon(icon);
+        _items[index].SetLevel(level);
     }
     
     

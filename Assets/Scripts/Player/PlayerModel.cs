@@ -42,7 +42,7 @@
         {
             if (isEnoughMana(mana))
             {
-                _currentMana -= mana;
+                AddMana(-mana);
                 return true;
             }
             return false;

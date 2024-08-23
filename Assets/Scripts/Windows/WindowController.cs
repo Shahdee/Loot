@@ -23,13 +23,22 @@ public class WindowController : IWindowController
         if (win == null)
             return;
 
+        // if (_currWindows.Count > 0)
+        // {
+        //     var openedWindow = _currWindows.Pop();
+        //     openedWindow.Close();
+        // }
+
+        _currWindows.Push(win);
+        win.Open();
+    }
+
+    public void GoBack()
+    {
         if (_currWindows.Count > 0)
         {
             var openedWindow = _currWindows.Pop();
             openedWindow.Close();
         }
-
-        _currWindows.Push(win);
-        win.Open();
     }
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IItemFactory 
 {
-    ItemData Create(EItemType itemType);
+    ItemModel Create();
 }

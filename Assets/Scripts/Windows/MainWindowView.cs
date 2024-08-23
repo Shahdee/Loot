@@ -29,9 +29,10 @@ public class MainWindowView : AbstractWindowView
         _lootBtn.enabled = block; // TODO check
     }
 
+    public void SetItem(int index, Sprite icon, int level) => _inventoryView.SetItem(index, icon, level);
+
     private void LootClick()
     {
-        Debug.Log("click ");
         OnLootClick?.Invoke();
     }
 
