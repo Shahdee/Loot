@@ -28,5 +28,7 @@ public class GameManager : IInitializable
     private void StartGame()
     {
         _windowController.OpenWindow(EWindowType.Main);
+        
+        // set up character 
     }
 }

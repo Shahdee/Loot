@@ -155,6 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers:
   - {fileID: 11400000, guid: 3bc445941b57c41f990b1a14aa0654df, type: 2}
+  - {fileID: 11400000, guid: 86a2afc0bdce649f1a634ada6cdc88d0, type: 2}
+  - {fileID: 11400000, guid: 31c46db599d64404abd8bd9a581e2fb4, type: 2}
   _monoInstallers:
   - {fileID: 356790243}
   _installerPrefabs: []
@@ -259,7 +261,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
   orthographic: 1
   orthographic size: 5

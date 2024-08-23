@@ -6,6 +6,248 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Data" t="Include" />
+        <e p="Free Platform Game Assets" t="Include">
+          <e p="Backgrounds" t="Include">
+            <e p="Background" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="1920x1080" t="Include">
+                  <e p="All" t="Include" />
+                  <e p="Background" t="Include" />
+                </e>
+                <e p="2048x1536" t="Include">
+                  <e p="All" t="Include" />
+                  <e p="Background" t="Include" />
+                </e>
+                <e p="Clouds" t="Include">
+                  <e p="128x128" t="Include" />
+                  <e p="256x256" t="Include" />
+                  <e p="512x512" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="New Background ( Update 1.7 )" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="1920x1080" t="Include">
+                  <e p="All" t="Include" />
+                  <e p="Background" t="Include" />
+                </e>
+                <e p="2048x1536" t="Include">
+                  <e p="All" t="Include" />
+                  <e p="Background" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="New Background ( Update 1.9 )" t="Include">
+              <e p="png" t="Include">
+                <e p="1920x1080" t="Include">
+                  <e p="All" t="Include" />
+                  <e p="Background" t="Include" />
+                </e>
+                <e p="2048x1024" t="Include">
+                  <e p="All" t="Include" />
+                  <e p="backgraound" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Character" t="Include">
+            <e p="Character Animation ( Update 1.8 )" t="Include">
+              <e p="Idle" t="Include">
+                <e p="Blink" t="Include" />
+              </e>
+              <e p="Jump" t="Include" />
+              <e p="Run" t="Include" />
+            </e>
+            <e p="Character Source" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="1x" t="Include" />
+                <e p="2x" t="Include" />
+                <e p="4x" t="Include">
+                  <e p="Sprite Mesh" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Chests" t="Include">
+            <e p="Chest" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="Separate" t="Include">
+                  <e p="1x" t="Include" />
+                  <e p="2x" t="Include" />
+                  <e p="4x" t="Include" />
+                </e>
+                <e p="Sheet" t="Include" />
+                <e p="Sliced" t="Include">
+                  <e p="Sliced 1" t="Include">
+                    <e p="1x" t="Include" />
+                    <e p="2x" t="Include" />
+                    <e p="4x" t="Include" />
+                  </e>
+                  <e p="Sliced 2" t="Include">
+                    <e p="1x" t="Include" />
+                    <e p="2x" t="Include" />
+                    <e p="4x" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="New Chests ( Update 1.8.5 )" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="Separate" t="Include">
+                  <e p="Model-1" t="Include">
+                    <e p="1x" t="Include" />
+                    <e p="2x" t="Include" />
+                    <e p="4x" t="Include" />
+                  </e>
+                  <e p="Model-2" t="Include">
+                    <e p="1x" t="Include" />
+                    <e p="2x" t="Include" />
+                    <e p="4x" t="Include" />
+                  </e>
+                </e>
+                <e p="Sheets" t="Include" />
+                <e p="Sliced" t="Include">
+                  <e p="Model-1" t="Include">
+                    <e p="1x" t="Include" />
+                    <e p="2x" t="Include" />
+                    <e p="4x" t="Include" />
+                  </e>
+                  <e p="Model-2" t="Include">
+                    <e p="1x" t="Include" />
+                    <e p="2x" t="Include" />
+                    <e p="4x" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Coin Animation" t="Include">
+            <e p="ai" t="Include" />
+            <e p="eps" t="Include" />
+            <e p="png" t="Include">
+              <e p="2x" t="Include" />
+              <e p="4x" t="Include" />
+            </e>
+          </e>
+          <e p="Demo" t="Include" />
+          <e p="Enemies" t="Include">
+            <e p="Enemies" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="128x128" t="Include" />
+                <e p="256x256" t="Include" />
+                <e p="32x32" t="Include" />
+                <e p="512x512" t="Include" />
+                <e p="64x64" t="Include" />
+              </e>
+            </e>
+            <e p="New Enemy ( Update 1.9 )" t="Include">
+              <e p="2x" t="Include">
+                <e p="2D Mac View" t="Include" />
+              </e>
+              <e p="4x" t="Include">
+                <e p="2D Mac View" t="Include" />
+              </e>
+              <e p="8x" t="Include">
+                <e p="2D Mace View" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Environments" t="Include">
+            <e p="Environments" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="1024x1024" t="Include" />
+                <e p="2048x2048" t="Include" />
+                <e p="512x512" t="Include" />
+                <e p="All" t="Include">
+                  <e p="1x" t="Include" />
+                  <e p="2x" t="Include" />
+                  <e p="4x" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="New Details ( Update 1.9 )" t="Include">
+              <e p="2x" t="Include" />
+              <e p="4x" t="Include" />
+              <e p="8x" t="Include" />
+            </e>
+          </e>
+          <e p="GUI ( Update 1.7 )" t="Include">
+            <e p="ai" t="Include" />
+            <e p="eps" t="Include" />
+            <e p="png" t="Include" />
+          </e>
+          <e p="Preview" t="Include" />
+          <e p="Readme.txt" t="Include" />
+          <e p="Tiles" t="Include">
+            <e p="2.5D Tiles" t="Include">
+              <e p="Autumn ( Update 1.9 )" t="Include">
+                <e p="128x128" t="Include" />
+                <e p="256x256" t="Include" />
+                <e p="512x512" t="Include" />
+              </e>
+              <e p="Spring" t="Include">
+                <e p="ai" t="Include" />
+                <e p="eps" t="Include" />
+                <e p="png" t="Include">
+                  <e p="128x128" t="Include" />
+                  <e p="256x256" t="Include" />
+                  <e p="512x512" t="Include" />
+                </e>
+              </e>
+              <e p="Winter ( Update 1.9 )" t="Include">
+                <e p="128x128" t="Include" />
+                <e p="256x256" t="Include" />
+                <e p="512x512" t="Include" />
+              </e>
+            </e>
+            <e p="2D Tiles ( Update 1.9 )" t="Include">
+              <e p="Autumn" t="Include">
+                <e p="128x128" t="Include" />
+                <e p="256x256" t="Include" />
+                <e p="512x512" t="Include" />
+              </e>
+              <e p="Spring" t="Include">
+                <e p="128x128" t="Include" />
+                <e p="256x256" t="Include" />
+                <e p="512x512" t="Include" />
+              </e>
+              <e p="Winter" t="Include">
+                <e p="128x128" t="Include" />
+                <e p="256x256" t="Include" />
+                <e p="512x512" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Water Animation" t="Include">
+            <e p="2.5D View" t="Include">
+              <e p="ai" t="Include" />
+              <e p="eps" t="Include" />
+              <e p="png" t="Include">
+                <e p="1x" t="Include" />
+                <e p="2x" t="Include" />
+              </e>
+            </e>
+            <e p="2D view ( Update 1.9 )" t="Include">
+              <e p="128x128" t="Include" />
+              <e p="256x256" t="Include" />
+              <e p="512x512" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Installers" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Zenject" t="Include">
@@ -570,11 +812,19 @@
             <e p="zenject.asmdef" t="Include" />
           </e>
         </e>
+        <e p="Prefabs" t="Include">
+          <e p="Items" t="Include" />
+          <e p="Windows" t="Include" />
+        </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="CharacterController.cs" t="Include" />
-          <e p="CharacterModel.cs" t="Include" />
-          <e p="CharacterView.cs" t="Include" />
+          <e p="Character" t="Include">
+            <e p="CharacterController.cs" t="Include" />
+            <e p="CharacterInstaller.cs" t="Include" />
+            <e p="CharacterModel.cs" t="Include" />
+            <e p="CharacterView.cs" t="Include" />
+            <e p="ICharacterController.cs" t="Include" />
+          </e>
           <e p="EItemStat.cs" t="Include" />
           <e p="EItemType.cs" t="Include" />
           <e p="GameInstaller.cs" t="Include" />
@@ -594,7 +844,8 @@
             <e p="IPlayerDataProvider.cs" t="Include" />
             <e p="PlayerAsset.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
-            <e p="PlayerDataProver.cs" t="Include" />
+            <e p="PlayerDataProvider.cs" t="Include" />
+            <e p="PlayerInstaller.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
           </e>
           <e p="Windows" t="Include">
@@ -622,7 +873,6 @@
             <e p="WindowStorage.cs" t="Include" />
           </e>
         </e>
-        <e p="UI" t="Include" />
       </e>
       <e p="Loot.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

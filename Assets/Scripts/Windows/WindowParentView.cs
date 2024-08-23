@@ -1,9 +1,7 @@
 using UnityEngine;
 
-namespace Windows
+
+public class WindowParentView : MonoBehaviour
 {
-    public class WindowParentView : MonoBehaviour
-    {
-        
-    }
+    
 }

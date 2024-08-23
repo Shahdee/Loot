@@ -15,3 +15,4 @@ MonoBehaviour:
   _mainWindowView: {fileID: 6347427070792673043, guid: 18465261a43e2440f8e9b3db2c2db33f, type: 3}
   _dropWindowView: {fileID: 6548892386516438332, guid: eb3c9c49ce86742b7866e60d3dc7e427, type: 3}
   _itemStatWindowView: {fileID: 720290892782557809, guid: a1b74a9b79490485cb83f0dab01b38ed, type: 3}
+  _windowParentView: {fileID: 2471189458518460895, guid: 6a9952d7ddbe3421c9586864d04d6219, type: 3}

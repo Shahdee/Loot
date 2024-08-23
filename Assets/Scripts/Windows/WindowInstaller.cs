@@ -1,8 +1,7 @@
-using Windows;
 using UnityEngine;
 using Zenject;
 
-[CreateAssetMenu(fileName = "WindowInstaller", menuName = "SO/Installers/WindowInstaller")]
+[CreateAssetMenu(fileName = "WindowInstaller", menuName = "SO/Zenject/WindowInstaller")]
 public class WindowInstaller : ScriptableObjectInstaller<WindowInstaller>
 {
     [SerializeField] private MainWindowView _mainWindowView;
@@ -21,6 +20,7 @@ public class WindowInstaller : ScriptableObjectInstaller<WindowInstaller>
         BindAsset(_mainWindowView);
         BindAsset(_dropWindowView);
         BindAsset(_itemStatWindowView);
+        BindAsset(_windowParentView);
         
         Container.BindInterfacesTo<MainWindow>().AsSingle();
         Container.BindInterfacesTo<DropWindow>().AsSingle();
