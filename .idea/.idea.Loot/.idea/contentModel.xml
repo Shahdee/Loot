@@ -848,6 +848,8 @@
             <e p="IItemFactory.cs" t="Include" />
             <e p="IItemIconProvider.cs" t="Include" />
             <e p="IItemModel.cs" t="Include" />
+            <e p="IItemStatDataProvider.cs" t="Include" />
+            <e p="IItemStatFormatController.cs" t="Include" />
             <e p="ItemData.cs" t="Include" />
             <e p="ItemFactory.cs" t="Include" />
             <e p="ItemIconAsset.cs" t="Include" />
@@ -855,6 +857,10 @@
             <e p="ItemIconProvider.cs" t="Include" />
             <e p="ItemInstaller.cs" t="Include" />
             <e p="ItemModel.cs" t="Include" />
+            <e p="ItemStatAsset.cs" t="Include" />
+            <e p="ItemStatData.cs" t="Include" />
+            <e p="ItemStatDataProvider.cs" t="Include" />
+            <e p="ItemStatFormatController.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="IPlayerDataProvider.cs" t="Include" />

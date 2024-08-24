@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IItemFactory 
+public interface IItemFactory
 {
-    ItemModel Create();
+    EItemType GetRandomItemType();
+    ItemModel Create(IItemModel itemPrototype, EItemType itemType);
 }

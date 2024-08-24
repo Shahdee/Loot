@@ -4,13 +4,16 @@ using UnityEngine;
 
 public interface ICharacterModel
 {
-   bool HasDrop();
+   ItemModel Loot { get; }
+
+   bool HasLoot();
 
    int GetCurrentLevelForItem(EItemType itemType);
 
    int[] GetCurrentStatsForItem(EItemType itemType);
 
-   ItemModel GetCurrentItem(EItemType itemType);
+   ItemModel GetEquippedItem(EItemType itemType);
 
-   void AddItem(ItemModel itemModel);
+   void EquipItem(ItemModel itemModel);
+   void SetLoot(ItemModel itemModel);
 }

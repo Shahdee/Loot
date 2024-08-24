@@ -1,6 +1,4 @@
-
     using System;
-    using UnityEngine;
 
     public class PlayerModel : IPlayerModel, IUpdatable
     {
@@ -20,8 +18,7 @@
         private int _manaReplenishValue;
         
         private int _lootPrice;
-        
-        
+
         private readonly IPlayerDataProvider _playerDataProvider;
         
         public PlayerModel(IPlayerDataProvider playerDataProvider)

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ItemInstaller
   m_EditorClassIdentifier: 
   _itemIconAsset: {fileID: 11400000, guid: a6d51e93ebcbd1c44b971795d03b7944, type: 2}
+  _itemStatAsset: {fileID: 11400000, guid: 344741056496a4d6aaada88b497a28ac, type: 2}

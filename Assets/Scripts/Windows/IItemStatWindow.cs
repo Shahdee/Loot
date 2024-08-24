@@ -3,7 +3,8 @@ using System;
 
 public interface IItemStatWindow
 {
-    public event Action OnOkClick;
+    event Action OnOkClick;
+    event Action OnBackClick;
     
     void SetItem(ItemModel itemModel);
 }

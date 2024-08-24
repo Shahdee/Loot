@@ -10,8 +10,7 @@ public class MainWindow : AbstractWindow, IMainWindow
 
    private readonly IItemIconProvider _itemIconProvider;
    private readonly MainWindowView _view;
-
-   // TODO Check 
+   
    public MainWindow(IItemIconProvider itemIconProvider,
          MainWindowView view) : base(view)
    {

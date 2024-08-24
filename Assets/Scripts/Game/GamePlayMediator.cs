@@ -6,8 +6,8 @@ public class GamePlayMediator : IGamePlayMediator
     private readonly IPlayerModel _playerModel;
     private readonly ICharacterModel _characterModel;
     private readonly IItemFactory _itemFactory;
-    private readonly IItemIconProvider _itemIconProvider;
-    
+    private readonly IItemStatDataProvider _itemStatDataProvider;
+
     private readonly IMainWindow _mainWindow;
     private readonly IDropWindow _dropWindow;
     private readonly IItemStatWindow _itemStatWindow;
@@ -17,8 +17,7 @@ public class GamePlayMediator : IGamePlayMediator
                             IPlayerModel playerModel,
                             ICharacterModel characterModel,
                             IItemFactory itemFactory,
-                            IItemIconProvider itemIconProvider,
-                            
+                            IItemStatDataProvider itemStatDataProvider,
                             IDropWindow dropWindow,
                             IMainWindow mainWindow,
                             IItemStatWindow itemStatWindow)
@@ -27,7 +26,7 @@ public class GamePlayMediator : IGamePlayMediator
         _playerModel = playerModel;
         _characterModel = characterModel;
         _itemFactory = itemFactory;
-        _itemIconProvider = itemIconProvider;
+        _itemStatDataProvider = itemStatDataProvider;
 
         _mainWindow = mainWindow;
         _dropWindow = dropWindow;
@@ -39,7 +38,12 @@ public class GamePlayMediator : IGamePlayMediator
         _mainWindow.OnLootClick += LootClick;
         _mainWindow.OnInventoryItemClick += InventoryClick;
 
-        _itemStatWindow.OnOkClick += StatOkClick;
+        _itemStatWindow.OnOkClick += BackClick;
+        _itemStatWindow.OnBackClick += BackClick;
+
+        _dropWindow.OnDropClick += DropClick;
+        _dropWindow.OnEquipClick += EquipClick;
+        _dropWindow.OnBackClick += BackClick;
 
     }
 
@@ -52,41 +56,34 @@ public class GamePlayMediator : IGamePlayMediator
     {
         if (_playerModel.isEnoughMana(_playerModel.LootPrice))
         {
-            if (_characterModel.HasDrop())
+            if (_characterModel.HasLoot())
             {
-                // show exchange 
-                Debug.Log("has drop ");
+                var lootedItem = _characterModel.Loot;
+                var equippedItem = _characterModel.GetEquippedItem(lootedItem.ItemType);
+                
+                _dropWindow.SetItems(equippedItem, lootedItem);
+                _windowController.OpenWindow(EWindowType.Drop);
                 return;
             }
-
             
+
             if (_playerModel.SpendMana(_playerModel.LootPrice))
             {
-                var dropItem = _itemFactory.Create();
-                var currentItem = _characterModel.GetCurrentItem(dropItem.ItemType);
+                var randomItemType = _itemFactory.GetRandomItemType();
+                var equippedItem = _characterModel.GetEquippedItem(randomItemType);
+                
+                var lootedItem = _itemFactory.Create(equippedItem, randomItemType);
 
-                if (currentItem == null)
+                if (equippedItem == null)
                 {
-                    _characterModel.AddItem(dropItem);
-
-                   
-
-                    _mainWindow.SetItem(dropItem);
-                    
-                    Debug.Log("new item");
+                    _characterModel.EquipItem(lootedItem);
+                    _mainWindow.SetItem(lootedItem);
                 }
                 else
                 {
-                    // _dropWindow.SetItems(currentItem, dropItem);
-                
-                    // get new item 
-                    // give it to character - add drop - ? 
-                    // show window 
-                    // equip 
-                    // sell 
-                    // exchange 
-                    
-                    Debug.Log("exchange");
+                    _characterModel.SetLoot(lootedItem);
+                    _dropWindow.SetItems(equippedItem, lootedItem);
+                    _windowController.OpenWindow(EWindowType.Drop);
                 }
             }
         }
@@ -99,7 +96,7 @@ public class GamePlayMediator : IGamePlayMediator
     private void InventoryClick(int index)
     {
         var itemType = (EItemType) index;
-        var item = _characterModel.GetCurrentItem(itemType);
+        var item = _characterModel.GetEquippedItem(itemType);
 
         if (item != null)
         {
@@ -112,8 +109,28 @@ public class GamePlayMediator : IGamePlayMediator
         }
     }
 
-    private void StatOkClick()
+    private void BackClick()
     {
         _windowController.GoBack();
+    }
+
+    private void DropClick()
+    {
+        var lootedItem = _characterModel.Loot;
+        var sellPrice = _itemStatDataProvider.GetItemSellPrice(lootedItem.ItemType);
+        _playerModel.AddGold(sellPrice);
+        _characterModel.SetLoot(null);
+        
+        _windowController.GoBack();
+    }
+
+    private void EquipClick()
+    {
+        var lootedItem = _characterModel.Loot;
+        var equippedItem = _characterModel.GetEquippedItem(lootedItem.ItemType);
+        _characterModel.SetLoot(equippedItem);
+        _characterModel.EquipItem(lootedItem);
+        
+        _dropWindow.SetItems(lootedItem, equippedItem);
     }
 }

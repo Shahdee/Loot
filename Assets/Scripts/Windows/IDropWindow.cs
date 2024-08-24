@@ -1,5 +1,11 @@
+using System;
 
 public interface IDropWindow
 {
-    void SetItems(ItemModel currentItem, ItemModel dropItem);
+    event Action OnDropClick;
+    event Action OnEquipClick;
+    event Action OnBackClick;
+    
+    
+    void SetItems(ItemModel equippedItem, ItemModel lootedItem);
 }
