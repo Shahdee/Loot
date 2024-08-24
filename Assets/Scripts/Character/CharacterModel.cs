@@ -11,7 +11,6 @@ public class CharacterModel : ICharacterModel
     public CharacterModel()
     {
         var itemCount =  Enum.GetValues( typeof( EItemType ) ).Length;
-        Debug.LogError(" itemCount " + itemCount);
         _equippedItems = new ItemModel[itemCount];
     }
     
