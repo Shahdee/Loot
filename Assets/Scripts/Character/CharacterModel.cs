@@ -1,20 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
+using UnityEngine;
 
 public class CharacterModel : ICharacterModel
 {
-
-    // stats 
-    // items 
-
     private ItemModel[] _currentItems;
     private ItemModel _droppedItem;
 
     public CharacterModel()
     {
         var itemCount =  Enum.GetValues( typeof( EItemType ) ).Length;
+        Debug.LogError(" itemCount " + itemCount);
         _currentItems = new ItemModel[itemCount];
     }
     
@@ -24,11 +19,22 @@ public class CharacterModel : ICharacterModel
     public int GetCurrentLevelForItem(EItemType itemType)
     {
         var index = (int) itemType;
-
         if (_currentItems[index] == null)
             return 0;
         
         return _currentItems[index].Level;
+    }
+
+    public int[] GetCurrentStatsForItem(EItemType itemType)
+    {
+        var index = (int) itemType;
+
+        if (_currentItems[index] == null)
+            return null;
+
+        _currentItems[index].Stats[0] = 0;
+
+        return _currentItems[index].Stats;
     }
 
     public ItemModel GetCurrentItem(EItemType itemType)

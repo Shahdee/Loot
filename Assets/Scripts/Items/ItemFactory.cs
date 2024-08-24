@@ -25,19 +25,30 @@ public class ItemFactory : IItemFactory
 
     public ItemModel Create(EItemType itemType)
     {
-        var level = _characterModel.GetCurrentLevelForItem(itemType);
-        Debug.Log("Create " + itemType + " of level " + level);
+        var baseLevel = _characterModel.GetCurrentLevelForItem(itemType);
+        Debug.Log("Create " + itemType + " of level " + baseLevel);
         
-        // randomize level 
-        // randomize stats
+        var level = GetRandomLevel(baseLevel);
+        var stats = GetRandomStats();
         
-        return new ItemModel(itemType, level);
+        return new ItemModel(itemType, level, stats);
 
+    }
+
+
+    private int GetRandomLevel(int baseLevel)
+    {
+        return baseLevel;
+    }
+
+    private int[] GetRandomStats()
+    {
+        return new int[6];
     }
 
 
     private EItemType GetRandomItemType()
     {
-        return (EItemType)Random.Range(0, _itemCount + 1);
+        return (EItemType)Random.Range(0, _itemCount);
     }
 }

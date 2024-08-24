@@ -36,7 +36,7 @@
             _lootPrice = _playerDataProvider.GetLootPrice();
         }
 
-        public bool isEnoughMana(int mana) => (mana < _currentMana);
+        public bool isEnoughMana(int mana) => (mana <= _currentMana);
         
         public bool SpendMana(int mana)
         {
@@ -58,8 +58,6 @@
         {
             _currentMana += value;
             OnManaChange?.Invoke(_currentMana);
-            
-            Debug.Log("Add mana " + value);
         }
 
 

@@ -828,21 +828,23 @@
             <e p="CharacterModel.cs" t="Include" />
             <e p="CharacterView.cs" t="Include" />
             <e p="ICharacterController.cs" t="Include" />
+            <e p="ICharacterModel.cs" t="Include" />
           </e>
-          <e p="EItemStat.cs" t="Include" />
-          <e p="EItemType.cs" t="Include" />
-          <e p="GameInstaller.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
-          <e p="GamePlayMediator.cs" t="Include" />
+          <e p="Game" t="Include">
+            <e p="GameInstaller.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="GamePlayMediator.cs" t="Include" />
+            <e p="IGamePlayMediator.cs" t="Include" />
+          </e>
           <e p="Helper" t="Include">
             <e p="HelperInstaller.cs" t="Include" />
             <e p="IUpdatable.cs" t="Include" />
             <e p="UnityEventController.cs" t="Include" />
             <e p="UnityEventView.cs" t="Include" />
           </e>
-          <e p="ICharacterModel.cs" t="Include" />
-          <e p="IGamePlayMediator.cs" t="Include" />
           <e p="Items" t="Include">
+            <e p="EItemStat.cs" t="Include" />
+            <e p="EItemType.cs" t="Include" />
             <e p="IItemFactory.cs" t="Include" />
             <e p="IItemIconProvider.cs" t="Include" />
             <e p="IItemModel.cs" t="Include" />

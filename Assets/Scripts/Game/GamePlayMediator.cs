@@ -53,8 +53,13 @@ public class GamePlayMediator : IGamePlayMediator
         if (_playerModel.isEnoughMana(_playerModel.LootPrice))
         {
             if (_characterModel.HasDrop())
+            {
+                // show exchange 
+                Debug.Log("has drop ");
                 return;
+            }
 
+            
             if (_playerModel.SpendMana(_playerModel.LootPrice))
             {
                 var dropItem = _itemFactory.Create();
@@ -84,6 +89,10 @@ public class GamePlayMediator : IGamePlayMediator
                     Debug.Log("exchange");
                 }
             }
+        }
+        else
+        {
+            Debug.Log("not enough mana ");
         }
     }
     

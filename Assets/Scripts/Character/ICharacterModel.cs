@@ -8,6 +8,8 @@ public interface ICharacterModel
 
    int GetCurrentLevelForItem(EItemType itemType);
 
+   int[] GetCurrentStatsForItem(EItemType itemType);
+
    ItemModel GetCurrentItem(EItemType itemType);
 
    void AddItem(ItemModel itemModel);
