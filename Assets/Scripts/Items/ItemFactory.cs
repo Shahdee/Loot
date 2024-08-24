@@ -23,7 +23,7 @@ public class ItemFactory : IItemFactory
         _randomStats = new int[statCount];
     }
     
-    public EItemType GetRandomItemType() => (EItemType)Random.Range(0, _itemCount + 1);
+    public EItemType GetRandomItemType() => (EItemType)Random.Range(0, _itemCount);
 
 
     public ItemModel Create(IItemModel itemPrototype, EItemType itemType)
