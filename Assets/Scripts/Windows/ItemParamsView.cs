@@ -12,9 +12,6 @@ public class ItemParamsView : MonoBehaviour
         _icon.sprite = icon;
         _level.text = level.ToString();
         
-        Debug.Log(_stats);
-        Debug.Log(stats);
-
         if (_stats.Length != stats.Length)
             return;
 

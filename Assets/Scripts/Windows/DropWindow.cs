@@ -43,9 +43,6 @@ public class DropWindow : AbstractWindow, IDropWindow
         
         itemStats = _itemStatFormatController.GetComparedItemStatsFormatted(equippedItem.Stats, lootedItem.Stats);
 
-        Debug.Log("here ");
-        Debug.LogError(itemStats);
-        
         _view.SetLootedItem(icon, level, itemStats);
     }
 }

@@ -131,6 +131,8 @@ public class GamePlayMediator : IGamePlayMediator
         _characterModel.SetLoot(equippedItem);
         _characterModel.EquipItem(lootedItem);
         
+        _mainWindow.SetItem(lootedItem);
+        
         _dropWindow.SetItems(lootedItem, equippedItem);
     }
 }
