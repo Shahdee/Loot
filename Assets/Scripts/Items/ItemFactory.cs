@@ -61,6 +61,8 @@ public class ItemFactory : IItemFactory
             var statDelta = Random.Range(0, _itemStatDataProvider.StatRandomDelta);
             statDelta = Random.Range(0, 2) == 1 ? statDelta * ( -1 ) : statDelta;
             _randomStats[i] = Mathf.Max(0,prototypeStats[i] + statDelta);
+            
+            // Debug.Log("base " + prototypeStats[i] + " => " + _randomStats[i]);
         }
 
         return _randomStats;

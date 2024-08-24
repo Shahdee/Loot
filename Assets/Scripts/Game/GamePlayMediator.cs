@@ -31,9 +31,6 @@ public class GamePlayMediator : IGamePlayMediator
         _mainWindow = mainWindow;
         _dropWindow = dropWindow;
         _itemStatWindow = itemStatWindow;
-        
-        _playerModel.OnManaChange += ManaChange;
-        // _playerModel.OnGoldChange += ;
 
         _mainWindow.OnLootClick += LootClick;
         _mainWindow.OnInventoryItemClick += InventoryClick;
@@ -46,11 +43,7 @@ public class GamePlayMediator : IGamePlayMediator
         _dropWindow.OnBackClick += BackClick;
 
     }
-
-    private void ManaChange(int mana)
-    {
-        // block button if not enough 
-    }
+    
 
     private void LootClick()
     {
@@ -102,10 +95,6 @@ public class GamePlayMediator : IGamePlayMediator
         {
             _itemStatWindow.SetItem(item);
             _windowController.OpenWindow(EWindowType.ItemStat);
-        }
-        else
-        {
-            Debug.Log("No item.. of " + itemType);
         }
     }
 
